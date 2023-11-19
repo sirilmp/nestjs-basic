@@ -26,7 +26,7 @@ model Bookmark {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @default(now())
   title      String
-  decription String?
+  description String?
   link       String
   userId     Int
   user       User     @relation(fields: [userId], references: [id])

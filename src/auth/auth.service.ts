@@ -78,6 +78,8 @@ export class AuthService {
     const payload = {
       sub: userId,
       email,
+      f_name: 'first name',
+      l_name: 'last name',
     };
     const secret = this.config.get('JWT_SECRET');
     // generating the JWT token
